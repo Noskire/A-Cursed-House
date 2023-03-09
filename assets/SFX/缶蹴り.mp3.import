@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/缶蹴り.mp3-4484efa8b9588a0eace4629246e85b48.mp3str"
+
+[deps]
+
+source_file="res://assets/SFX/缶蹴り.mp3"
+dest_files=[ "res://.import/缶蹴り.mp3-4484efa8b9588a0eace4629246e85b48.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

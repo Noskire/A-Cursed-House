@@ -1,0 +1,233 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/theme.tres" type="Theme" id=1]
+[ext_resource path="res://OptionsMenu.gd" type="Script" id=2]
+
+[node name="OptionsMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -200.0
+margin_top = 25.0
+margin_right = 200.0
+margin_bottom = 91.0
+rect_min_size = Vector2( 400, 0 )
+text = "Options"
+align = 1
+
+[node name="Margin" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 200
+custom_constants/margin_top = 100
+custom_constants/margin_left = 200
+
+[node name="Grid" type="GridContainer" parent="Margin"]
+margin_left = 200.0
+margin_top = 100.0
+margin_right = 1720.0
+margin_bottom = 1080.0
+custom_constants/vseparation = 25
+columns = 2
+
+[node name="DisplayMode" type="Label" parent="Margin/Grid"]
+margin_top = 3.0
+margin_right = 265.0
+margin_bottom = 69.0
+text = "Display Mode"
+
+[node name="DisplayBtn" type="OptionButton" parent="Margin/Grid"]
+margin_left = 1270.0
+margin_right = 1520.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 250, 0 )
+size_flags_horizontal = 10
+text = "Windowed"
+align = 1
+items = [ "Windowed", null, false, 0, null, "FullScreen", null, false, 1, null ]
+selected = 0
+
+[node name="Language" type="Label" parent="Margin/Grid"]
+visible = false
+margin_top = 97.0
+margin_right = 758.0
+margin_bottom = 163.0
+text = "Language"
+
+[node name="LanguageBtn" type="OptionButton" parent="Margin/Grid"]
+visible = false
+margin_left = 1270.0
+margin_top = 97.0
+margin_right = 1520.0
+margin_bottom = 169.0
+rect_min_size = Vector2( 250, 0 )
+size_flags_horizontal = 10
+text = "English"
+align = 1
+items = [ "English", null, false, 0, null, "Português", null, false, 1, null ]
+selected = 0
+
+[node name="FontSize" type="Label" parent="Margin/Grid"]
+margin_top = 100.0
+margin_right = 265.0
+margin_bottom = 166.0
+text = "Font Size"
+
+[node name="FontBtn" type="OptionButton" parent="Margin/Grid"]
+margin_left = 1270.0
+margin_top = 97.0
+margin_right = 1520.0
+margin_bottom = 169.0
+rect_min_size = Vector2( 250, 0 )
+size_flags_horizontal = 10
+text = "Normal"
+align = 1
+items = [ "Normal", null, false, 0, null, "Big", null, false, 1, null, "Bigger", null, false, 2, null ]
+selected = 0
+
+[node name="MasterVol" type="Label" parent="Margin/Grid"]
+margin_top = 194.0
+margin_right = 265.0
+margin_bottom = 260.0
+text = "Master Volume"
+
+[node name="Master" type="HBoxContainer" parent="Margin/Grid"]
+margin_left = 1120.0
+margin_top = 194.0
+margin_right = 1520.0
+margin_bottom = 260.0
+rect_min_size = Vector2( 400, 0 )
+size_flags_horizontal = 10
+
+[node name="Value" type="Label" parent="Margin/Grid/Master"]
+margin_right = 25.0
+margin_bottom = 66.0
+text = "0"
+
+[node name="Slider" type="HSlider" parent="Margin/Grid/Master"]
+margin_left = 100.0
+margin_right = 400.0
+margin_bottom = 66.0
+rect_min_size = Vector2( 300, 0 )
+size_flags_horizontal = 10
+size_flags_vertical = 1
+min_value = -25.0
+max_value = 0.0
+step = 0.1
+
+[node name="MusicVol" type="Label" parent="Margin/Grid"]
+margin_top = 285.0
+margin_right = 265.0
+margin_bottom = 351.0
+text = "Music Volume"
+
+[node name="Music" type="HBoxContainer" parent="Margin/Grid"]
+margin_left = 1120.0
+margin_top = 285.0
+margin_right = 1520.0
+margin_bottom = 351.0
+rect_min_size = Vector2( 400, 0 )
+size_flags_horizontal = 10
+
+[node name="Value" type="Label" parent="Margin/Grid/Music"]
+margin_right = 25.0
+margin_bottom = 66.0
+text = "0"
+
+[node name="Slider" type="HSlider" parent="Margin/Grid/Music"]
+margin_left = 100.0
+margin_right = 400.0
+margin_bottom = 66.0
+rect_min_size = Vector2( 300, 0 )
+size_flags_horizontal = 10
+size_flags_vertical = 1
+min_value = -25.0
+max_value = 0.0
+step = 0.1
+
+[node name="SFXVol" type="Label" parent="Margin/Grid"]
+margin_top = 376.0
+margin_right = 265.0
+margin_bottom = 442.0
+text = "SFX Volume"
+
+[node name="SFX" type="HBoxContainer" parent="Margin/Grid"]
+margin_left = 1120.0
+margin_top = 376.0
+margin_right = 1520.0
+margin_bottom = 442.0
+rect_min_size = Vector2( 400, 0 )
+size_flags_horizontal = 10
+
+[node name="Value" type="Label" parent="Margin/Grid/SFX"]
+margin_right = 25.0
+margin_bottom = 66.0
+text = "0"
+
+[node name="Slider" type="HSlider" parent="Margin/Grid/SFX"]
+margin_left = 100.0
+margin_right = 400.0
+margin_bottom = 66.0
+rect_min_size = Vector2( 300, 0 )
+size_flags_horizontal = 10
+size_flags_vertical = 1
+min_value = -25.0
+max_value = 0.0
+step = 0.1
+
+[node name="VoiceVol" type="Label" parent="Margin/Grid"]
+visible = false
+margin_top = 470.0
+margin_right = 265.0
+margin_bottom = 536.0
+text = "Voice Volume"
+
+[node name="Voice" type="HBoxContainer" parent="Margin/Grid"]
+visible = false
+margin_left = 1120.0
+margin_top = 467.0
+margin_right = 1520.0
+margin_bottom = 533.0
+rect_min_size = Vector2( 400, 0 )
+size_flags_horizontal = 10
+
+[node name="Value" type="Label" parent="Margin/Grid/Voice"]
+margin_right = 25.0
+margin_bottom = 66.0
+text = "0"
+
+[node name="Slider" type="HSlider" parent="Margin/Grid/Voice"]
+margin_left = 100.0
+margin_right = 400.0
+margin_bottom = 66.0
+rect_min_size = Vector2( 300, 0 )
+size_flags_horizontal = 10
+size_flags_vertical = 1
+min_value = -25.0
+max_value = 0.0
+step = 0.1
+
+[node name="Back" type="Button" parent="Margin/Grid"]
+margin_top = 467.0
+margin_right = 265.0
+margin_bottom = 539.0
+text = "Back to Menu"
+
+[connection signal="item_selected" from="Margin/Grid/DisplayBtn" to="." method="_on_DisplayBtn_item_selected"]
+[connection signal="item_selected" from="Margin/Grid/LanguageBtn" to="." method="_on_LanguageBtn_item_selected"]
+[connection signal="item_selected" from="Margin/Grid/FontBtn" to="." method="_on_FontBtn_item_selected"]
+[connection signal="value_changed" from="Margin/Grid/Master/Slider" to="." method="_on_Master_value_changed"]
+[connection signal="value_changed" from="Margin/Grid/Music/Slider" to="." method="_on_Music_value_changed"]
+[connection signal="value_changed" from="Margin/Grid/SFX/Slider" to="." method="_on_SFX_value_changed"]
+[connection signal="value_changed" from="Margin/Grid/Voice/Slider" to="." method="_on_Voice_value_changed"]
+[connection signal="button_up" from="Margin/Grid/Back" to="." method="_on_Back_button_up"]

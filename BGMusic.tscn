@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/MusicBG.ogg" type="AudioStream" id=1]
+[ext_resource path="res://BGMusic.gd" type="Script" id=2]
+
+[node name="BGMusic" type="AudioStreamPlayer"]
+stream = ExtResource( 1 )
+volume_db = -6.0
+bus = "Music"
+script = ExtResource( 2 )
+
+[node name="SFX" type="AudioStreamPlayer" parent="."]
+bus = "SFX"
+
+[connection signal="finished" from="." to="." method="_on_BGMusic_finished"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/鉄板を叩く2.mp3-05d55241d9becd0091ceb03c8fe8021e.mp3str"
+
+[deps]
+
+source_file="res://assets/SFX/鉄板を叩く2.mp3"
+dest_files=[ "res://.import/鉄板を叩く2.mp3-05d55241d9becd0091ceb03c8fe8021e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/賽銭を投げ入れる.mp3-cc4c91eecf77858c354235c55ea4249c.mp3str"
+
+[deps]
+
+source_file="res://assets/SFX/賽銭を投げ入れる.mp3"
+dest_files=[ "res://.import/賽銭を投げ入れる.mp3-cc4c91eecf77858c354235c55ea4249c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

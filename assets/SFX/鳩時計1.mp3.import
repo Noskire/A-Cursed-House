@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/鳩時計1.mp3-91557f87db5ee8eef42a8637b92a9804.mp3str"
+
+[deps]
+
+source_file="res://assets/SFX/鳩時計1.mp3"
+dest_files=[ "res://.import/鳩時計1.mp3-91557f87db5ee8eef42a8637b92a9804.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

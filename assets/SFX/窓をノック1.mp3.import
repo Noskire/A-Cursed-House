@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/窓をノック1.mp3-d0425294a985d4e051067baba4b159c5.mp3str"
+
+[deps]
+
+source_file="res://assets/SFX/窓をノック1.mp3"
+dest_files=[ "res://.import/窓をノック1.mp3-d0425294a985d4e051067baba4b159c5.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

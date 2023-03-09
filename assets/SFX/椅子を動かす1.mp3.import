@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/椅子を動かす1.mp3-aaf08af0af223d84f1e727cd52764aec.mp3str"
+
+[deps]
+
+source_file="res://assets/SFX/椅子を動かす1.mp3"
+dest_files=[ "res://.import/椅子を動かす1.mp3-aaf08af0af223d84f1e727cd52764aec.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
